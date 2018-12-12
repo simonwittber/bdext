@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9626A795095321AC006C620D /* BiduleSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 969BD84F04FFA36800A80165 /* BiduleSDK.h */; };
+		9626A797095321AC006C620D /* PassthroughAll.h in Headers */ = {isa = PBXBuildFile; fileRef = 969BD85504FFA37800A80165 /* PassthroughAll.h */; };
+		9626A799095321AC006C620D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		9626A79B095321AC006C620D /* BiduleSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 969BD84E04FFA36800A80165 /* BiduleSDK.cpp */; };
+		9626A79C095321AC006C620D /* PassthroughAll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 969BD85404FFA37800A80165 /* PassthroughAll.cpp */; };
+		9626A79D095321AC006C620D /* BDExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 969BD85804FFA38400A80165 /* BDExt.cpp */; };
+		9626A79F095321AC006C620D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+		F414818421AEBC7A00C3DB38 /* TriggerSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F414818221AEBC7900C3DB38 /* TriggerSelector.cpp */; };
+		F414818521AEBC7A00C3DB38 /* TriggerSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = F414818321AEBC7900C3DB38 /* TriggerSelector.h */; };
+		F414818821AEE3CE00C3DB38 /* TriggerSelector16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F414818621AEE3CD00C3DB38 /* TriggerSelector16.cpp */; };
+		F414818921AEE3CE00C3DB38 /* TriggerSelector16.h in Headers */ = {isa = PBXBuildFile; fileRef = F414818721AEE3CD00C3DB38 /* TriggerSelector16.h */; };
+		F43A471321C017E8004B2430 /* Latch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F43A471121C017E8004B2430 /* Latch.cpp */; };
+		F43A471421C017E8004B2430 /* Latch.h in Headers */ = {isa = PBXBuildFile; fileRef = F43A471221C017E8004B2430 /* Latch.h */; };
+		F453237B21B8334D00AC75F0 /* Progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F453237921B8334D00AC75F0 /* Progress.cpp */; };
+		F453237C21B8334D00AC75F0 /* Progress.h in Headers */ = {isa = PBXBuildFile; fileRef = F453237A21B8334D00AC75F0 /* Progress.h */; };
+		F4968BC821AF33BC002EC13E /* Stepper.h in Headers */ = {isa = PBXBuildFile; fileRef = F4968BC621AF33BC002EC13E /* Stepper.h */; };
+		F4968BC921AF33BC002EC13E /* Stepper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4968BC721AF33BC002EC13E /* Stepper.cpp */; };
+		F4968BCC21AF432B002EC13E /* TriggerPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4968BCA21AF432B002EC13E /* TriggerPattern.cpp */; };
+		F4968BCD21AF432B002EC13E /* TriggerPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = F4968BCB21AF432B002EC13E /* TriggerPattern.h */; };
+		F4B09B7021A454E00037C1DB /* RandRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B09B6E21A454E00037C1DB /* RandRange.cpp */; };
+		F4B09B7121A454E00037C1DB /* RandRange.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B09B6F21A454E00037C1DB /* RandRange.h */; };
+		F4DD6AEB21A4AECC00EE71ED /* Valve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4DD6AE921A4AECC00EE71ED /* Valve.cpp */; };
+		F4DD6AEC21A4AECC00EE71ED /* Valve.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DD6AEA21A4AECC00EE71ED /* Valve.h */; };
+		F4DD6AEF21A54E2100EE71ED /* RandWalk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4DD6AED21A54E2100EE71ED /* RandWalk.cpp */; };
+		F4DD6AF021A54E2100EE71ED /* RandWalk.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DD6AEE21A54E2100EE71ED /* RandWalk.h */; };
+		F4F2A30B21A4083A006A4F4F /* FlipFlop.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F2A30A21A4083A006A4F4F /* FlipFlop.h */; };
+		F4F2A30D21A40885006A4F4F /* FlipFlop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F2A30C21A40885006A4F4F /* FlipFlop.cpp */; };
+		F4FCA9ED21C12FAB001A1C95 /* English.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F4FCA9EC21C12FAB001A1C95 /* English.lproj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		9626A7A6095321AC006C620D /* BDExt.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDExt.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		969BD84E04FFA36800A80165 /* BiduleSDK.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = BiduleSDK.cpp; path = ../common/BiduleSDK.cpp; sourceTree = SOURCE_ROOT; };
+		969BD84F04FFA36800A80165 /* BiduleSDK.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BiduleSDK.h; path = ../common/BiduleSDK.h; sourceTree = SOURCE_ROOT; };
+		969BD85004FFA36800A80165 /* BiduleTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BiduleTypes.h; path = ../common/BiduleTypes.h; sourceTree = SOURCE_ROOT; };
+		969BD85404FFA37800A80165 /* PassthroughAll.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = PassthroughAll.cpp; sourceTree = SOURCE_ROOT; };
+		969BD85504FFA37800A80165 /* PassthroughAll.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PassthroughAll.h; sourceTree = SOURCE_ROOT; };
+		969BD85804FFA38400A80165 /* BDExt.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = BDExt.cpp; sourceTree = SOURCE_ROOT; };
+		F414818221AEBC7900C3DB38 /* TriggerSelector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriggerSelector.cpp; sourceTree = "<group>"; };
+		F414818321AEBC7900C3DB38 /* TriggerSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerSelector.h; sourceTree = "<group>"; };
+		F414818621AEE3CD00C3DB38 /* TriggerSelector16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriggerSelector16.cpp; sourceTree = "<group>"; };
+		F414818721AEE3CD00C3DB38 /* TriggerSelector16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerSelector16.h; sourceTree = "<group>"; };
+		F43A471121C017E8004B2430 /* Latch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Latch.cpp; sourceTree = "<group>"; };
+		F43A471221C017E8004B2430 /* Latch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Latch.h; sourceTree = "<group>"; };
+		F453237921B8334D00AC75F0 /* Progress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Progress.cpp; sourceTree = "<group>"; };
+		F453237A21B8334D00AC75F0 /* Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Progress.h; sourceTree = "<group>"; };
+		F4968BC621AF33BC002EC13E /* Stepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stepper.h; sourceTree = "<group>"; };
+		F4968BC721AF33BC002EC13E /* Stepper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stepper.cpp; sourceTree = "<group>"; };
+		F4968BCA21AF432B002EC13E /* TriggerPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriggerPattern.cpp; sourceTree = "<group>"; };
+		F4968BCB21AF432B002EC13E /* TriggerPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerPattern.h; sourceTree = "<group>"; };
+		F4B09B6E21A454E00037C1DB /* RandRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandRange.cpp; sourceTree = "<group>"; };
+		F4B09B6F21A454E00037C1DB /* RandRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandRange.h; sourceTree = "<group>"; };
+		F4DD6AE921A4AECC00EE71ED /* Valve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Valve.cpp; sourceTree = "<group>"; };
+		F4DD6AEA21A4AECC00EE71ED /* Valve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Valve.h; sourceTree = "<group>"; };
+		F4DD6AED21A54E2100EE71ED /* RandWalk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandWalk.cpp; sourceTree = "<group>"; };
+		F4DD6AEE21A54E2100EE71ED /* RandWalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandWalk.h; sourceTree = "<group>"; };
+		F4F2A30A21A4083A006A4F4F /* FlipFlop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipFlop.h; sourceTree = "<group>"; };
+		F4F2A30C21A40885006A4F4F /* FlipFlop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlipFlop.cpp; sourceTree = "<group>"; };
+		F4FCA9EC21C12FAB001A1C95 /* English.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = English.lproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9626A79E095321AC006C620D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9626A79F095321AC006C620D /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = SDKExample;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				969BD84D04FFA34700A80165 /* Common */,
+				969BD85404FFA37800A80165 /* PassthroughAll.cpp */,
+				F4DD6AE921A4AECC00EE71ED /* Valve.cpp */,
+				F4DD6AEA21A4AECC00EE71ED /* Valve.h */,
+				F4FCA9EC21C12FAB001A1C95 /* English.lproj */,
+				F43A471121C017E8004B2430 /* Latch.cpp */,
+				F43A471221C017E8004B2430 /* Latch.h */,
+				969BD85504FFA37800A80165 /* PassthroughAll.h */,
+				F414818621AEE3CD00C3DB38 /* TriggerSelector16.cpp */,
+				F414818721AEE3CD00C3DB38 /* TriggerSelector16.h */,
+				F4B09B6E21A454E00037C1DB /* RandRange.cpp */,
+				F4B09B6F21A454E00037C1DB /* RandRange.h */,
+				F453237921B8334D00AC75F0 /* Progress.cpp */,
+				F453237A21B8334D00AC75F0 /* Progress.h */,
+				F4DD6AED21A54E2100EE71ED /* RandWalk.cpp */,
+				F4968BC721AF33BC002EC13E /* Stepper.cpp */,
+				F4968BC621AF33BC002EC13E /* Stepper.h */,
+				F4DD6AEE21A54E2100EE71ED /* RandWalk.h */,
+				F414818221AEBC7900C3DB38 /* TriggerSelector.cpp */,
+				F414818321AEBC7900C3DB38 /* TriggerSelector.h */,
+				F4F2A30C21A40885006A4F4F /* FlipFlop.cpp */,
+				F4968BCA21AF432B002EC13E /* TriggerPattern.cpp */,
+				F4968BCB21AF432B002EC13E /* TriggerPattern.h */,
+				F4F2A30A21A4083A006A4F4F /* FlipFlop.h */,
+				969BD85804FFA38400A80165 /* BDExt.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9626A7A6095321AC006C620D /* BDExt.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		969BD84D04FFA34700A80165 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				969BD84E04FFA36800A80165 /* BiduleSDK.cpp */,
+				969BD84F04FFA36800A80165 /* BiduleSDK.h */,
+				969BD85004FFA36800A80165 /* BiduleTypes.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9626A794095321AC006C620D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DD6AEC21A4AECC00EE71ED /* Valve.h in Headers */,
+				F4F2A30B21A4083A006A4F4F /* FlipFlop.h in Headers */,
+				F4DD6AF021A54E2100EE71ED /* RandWalk.h in Headers */,
+				9626A795095321AC006C620D /* BiduleSDK.h in Headers */,
+				9626A797095321AC006C620D /* PassthroughAll.h in Headers */,
+				F414818921AEE3CE00C3DB38 /* TriggerSelector16.h in Headers */,
+				F414818521AEBC7A00C3DB38 /* TriggerSelector.h in Headers */,
+				F4B09B7121A454E00037C1DB /* RandRange.h in Headers */,
+				F4968BC821AF33BC002EC13E /* Stepper.h in Headers */,
+				F43A471421C017E8004B2430 /* Latch.h in Headers */,
+				F4968BCD21AF432B002EC13E /* TriggerPattern.h in Headers */,
+				F453237C21B8334D00AC75F0 /* Progress.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9626A793095321AC006C620D /* BDExt (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9626A7A1095321AC006C620D /* Build configuration list for PBXNativeTarget "BDExt (Upgraded)" */;
+			buildPhases = (
+				9626A794095321AC006C620D /* Headers */,
+				9626A798095321AC006C620D /* Resources */,
+				9626A79A095321AC006C620D /* Sources */,
+				9626A79E095321AC006C620D /* Frameworks */,
+				9626A7A0095321AC006C620D /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BDExt (Upgraded)";
+			productName = SDKExample;
+			productReference = 9626A7A6095321AC006C620D /* BDExt.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 9626A7880953219D006C620D /* Build configuration list for PBXProject "BDExt" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* SDKExample */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9626A793095321AC006C620D /* BDExt (Upgraded) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9626A798095321AC006C620D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FCA9ED21C12FAB001A1C95 /* English.lproj in Resources */,
+				9626A799095321AC006C620D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		9626A7A0095321AC006C620D /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9626A79A095321AC006C620D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F414818821AEE3CE00C3DB38 /* TriggerSelector16.cpp in Sources */,
+				F4968BC921AF33BC002EC13E /* Stepper.cpp in Sources */,
+				F453237B21B8334D00AC75F0 /* Progress.cpp in Sources */,
+				F4B09B7021A454E00037C1DB /* RandRange.cpp in Sources */,
+				F414818421AEBC7A00C3DB38 /* TriggerSelector.cpp in Sources */,
+				9626A79B095321AC006C620D /* BiduleSDK.cpp in Sources */,
+				F4DD6AEB21A4AECC00EE71ED /* Valve.cpp in Sources */,
+				F4F2A30D21A40885006A4F4F /* FlipFlop.cpp in Sources */,
+				9626A79C095321AC006C620D /* PassthroughAll.cpp in Sources */,
+				9626A79D095321AC006C620D /* BDExt.cpp in Sources */,
+				F43A471321C017E8004B2430 /* Latch.cpp in Sources */,
+				F4968BCC21AF432B002EC13E /* TriggerPattern.cpp in Sources */,
+				F4DD6AEF21A54E2100EE71ED /* RandWalk.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9626A7890953219D006C620D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Development;
+		};
+		9626A78A0953219D006C620D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Deployment;
+		};
+		9626A78B0953219D006C620D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Default;
+		};
+		9626A7A2095321AC006C620D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = MAC;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-BDExt__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BDExt;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		9626A7A3095321AC006C620D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = MAC;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-BDExt__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BDExt;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		9626A7A4095321AC006C620D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = MAC;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-BDExt__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BDExt;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9626A7880953219D006C620D /* Build configuration list for PBXProject "BDExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9626A7890953219D006C620D /* Development */,
+				9626A78A0953219D006C620D /* Deployment */,
+				9626A78B0953219D006C620D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		9626A7A1095321AC006C620D /* Build configuration list for PBXNativeTarget "BDExt (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9626A7A2095321AC006C620D /* Development */,
+				9626A7A3095321AC006C620D /* Deployment */,
+				9626A7A4095321AC006C620D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
