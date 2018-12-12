@@ -64,17 +64,19 @@ void Latch::process(Sample **sampleIn, Sample **sampleOut, MIDIEvents *midiIn, M
 	Sample *out1 = sampleOut[1];
 
 	long sampleFrames = _dspInfo.bufferSize;
-
+    float rise, fall;
 	while (--sampleFrames >= 0)
 	{
 		Sample inVal = (*in0++);
-		float rise = 0;
-		float fall = 0;
-		if (_lastValue <= 0 && inVal > 0)
+		rise = 0;
+		fall = 0;
+		if (_lastValue <= 0 && inVal > 0 && inVal > _lastValue)
 			rise = 1;
-		if (_lastValue > 0 && inVal <= 0)
+		else if (_lastValue > 0 && inVal <= 0 && inVal < _lastValue)
 			fall = 1;
+        
 		_lastValue = inVal;
+        
 		(*out0++) = rise;
 		(*out1++) = fall;
 	}

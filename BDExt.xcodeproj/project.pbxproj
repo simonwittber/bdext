@@ -22,6 +22,8 @@
 		F43A471421C017E8004B2430 /* Latch.h in Headers */ = {isa = PBXBuildFile; fileRef = F43A471221C017E8004B2430 /* Latch.h */; };
 		F453237B21B8334D00AC75F0 /* Progress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F453237921B8334D00AC75F0 /* Progress.cpp */; };
 		F453237C21B8334D00AC75F0 /* Progress.h in Headers */ = {isa = PBXBuildFile; fileRef = F453237A21B8334D00AC75F0 /* Progress.h */; };
+		F483FADC21C146FE00540F6B /* Register.h in Headers */ = {isa = PBXBuildFile; fileRef = F483FADA21C146FE00540F6B /* Register.h */; };
+		F483FADD21C146FE00540F6B /* Register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F483FADB21C146FE00540F6B /* Register.cpp */; };
 		F4968BC821AF33BC002EC13E /* Stepper.h in Headers */ = {isa = PBXBuildFile; fileRef = F4968BC621AF33BC002EC13E /* Stepper.h */; };
 		F4968BC921AF33BC002EC13E /* Stepper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4968BC721AF33BC002EC13E /* Stepper.cpp */; };
 		F4968BCC21AF432B002EC13E /* TriggerPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4968BCA21AF432B002EC13E /* TriggerPattern.cpp */; };
@@ -55,6 +57,8 @@
 		F43A471221C017E8004B2430 /* Latch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Latch.h; sourceTree = "<group>"; };
 		F453237921B8334D00AC75F0 /* Progress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Progress.cpp; sourceTree = "<group>"; };
 		F453237A21B8334D00AC75F0 /* Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Progress.h; sourceTree = "<group>"; };
+		F483FADA21C146FE00540F6B /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
+		F483FADB21C146FE00540F6B /* Register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Register.cpp; sourceTree = "<group>"; };
 		F4968BC621AF33BC002EC13E /* Stepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stepper.h; sourceTree = "<group>"; };
 		F4968BC721AF33BC002EC13E /* Stepper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stepper.cpp; sourceTree = "<group>"; };
 		F4968BCA21AF432B002EC13E /* TriggerPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriggerPattern.cpp; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				F43A471121C017E8004B2430 /* Latch.cpp */,
 				F43A471221C017E8004B2430 /* Latch.h */,
 				969BD85504FFA37800A80165 /* PassthroughAll.h */,
+				F483FADB21C146FE00540F6B /* Register.cpp */,
+				F483FADA21C146FE00540F6B /* Register.h */,
 				F414818621AEE3CD00C3DB38 /* TriggerSelector16.cpp */,
 				F414818721AEE3CD00C3DB38 /* TriggerSelector16.h */,
 				F4B09B6E21A454E00037C1DB /* RandRange.cpp */,
@@ -174,6 +180,7 @@
 				F414818921AEE3CE00C3DB38 /* TriggerSelector16.h in Headers */,
 				F414818521AEBC7A00C3DB38 /* TriggerSelector.h in Headers */,
 				F4B09B7121A454E00037C1DB /* RandRange.h in Headers */,
+				F483FADC21C146FE00540F6B /* Register.h in Headers */,
 				F4968BC821AF33BC002EC13E /* Stepper.h in Headers */,
 				F43A471421C017E8004B2430 /* Latch.h in Headers */,
 				F4968BCD21AF432B002EC13E /* TriggerPattern.h in Headers */,
@@ -264,6 +271,7 @@
 				F4F2A30D21A40885006A4F4F /* FlipFlop.cpp in Sources */,
 				9626A79C095321AC006C620D /* PassthroughAll.cpp in Sources */,
 				9626A79D095321AC006C620D /* BDExt.cpp in Sources */,
+				F483FADD21C146FE00540F6B /* Register.cpp in Sources */,
 				F43A471321C017E8004B2430 /* Latch.cpp in Sources */,
 				F4968BCC21AF432B002EC13E /* TriggerPattern.cpp in Sources */,
 				F4DD6AEF21A54E2100EE71ED /* RandWalk.cpp in Sources */,

@@ -17,13 +17,14 @@
 #include "TriggerPattern.h"
 #include "Progress.h"
 #include "Latch.h"
+#include "Register.h"
 
 using namespace plogue::biduleSDK;
 using namespace acme;
 
 DLLExport unsigned long getNumBidules()
 {
-    return 11;
+    return 12;
 }
 
 DLLExport ErrorCode fillBiduleInfo(unsigned long biduleIdx, BidulePluginInfo *biduleInfo)
@@ -100,6 +101,12 @@ DLLExport ErrorCode fillBiduleInfo(unsigned long biduleIdx, BidulePluginInfo *bi
         strcpy(biduleInfo->fullName, "SRW\tLatch");
         return BSDK_NO_ERROR;
         break;
+    case 11:
+        strcpy(biduleInfo->type, "com.acme.Register");
+        strcpy(biduleInfo->name, "Register");
+        strcpy(biduleInfo->fullName, "SRW\tRegister");
+        return BSDK_NO_ERROR;
+        break;
     default:
         return BSDK_NO_PLUGIN;
         break;
@@ -166,6 +173,12 @@ DLLExport BidulePluginStruct *newInstance(const char *type, BiduleHost *host)
     if (strcmp(type, "com.acme.Latch") == 0)
     {
         BidulePlugin *bp = new Latch(host);
+        return bp->getBidulePluginStruct();
+    }
+
+    if (strcmp(type, "com.acme.Register") == 0)
+    {
+        BidulePlugin *bp = new Register(host);
         return bp->getBidulePluginStruct();
     }
 
